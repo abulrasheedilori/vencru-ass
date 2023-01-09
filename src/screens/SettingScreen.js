@@ -2,7 +2,7 @@ import React from 'react'
 
 export const SettingScreen = () => {
   return (
-    <div>SettingScreen</div>
+    <div className="underline">SettingScreen</div>
   )
 }
 
