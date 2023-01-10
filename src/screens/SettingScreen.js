@@ -1,9 +1,10 @@
 import React from "react";
 import { HiOutlineMenuAlt1, HiMail, HiPlus } from "react-icons/hi";
-// import CreditCard from "../components/CreditCard";
+import CreditCard from "../components/CreditCard";
 import logo from "../images/Logomark.png";
 import download from "../images/download.png";
-import { links } from "../store/data";
+import { links, billings, cards } from "../store/data";
+import BillingItem from "../components/BillingItem";
 
 export const SettingScreen = () => {
   return (
@@ -65,37 +66,40 @@ export const SettingScreen = () => {
               <p>Card details</p>
               <span>Select default payment method</span>
             </div>
-            {/* <div>
+            <div>
               {
               cards.map(
-                (card) => (<CreditCard key={card.id} card = {{...card}}/>))
+                (card) => (<CreditCard key={card.id} card = {card}/>))
               }
-            </div> */}
-            {
-                <div className="flex justify-around">
-                  <img src={logo} alt="Visa logo" width={50} height={20}/>
-                  <div>
-                      <p>Visa ending in {}</p>
-                      <p>Expiry </p>
-                      <div><span>Set as default</span><span>Edit</span></div>
-                  </div> 
-                  <img src={logo} width={50} height={50} alt="Marked" />
-                </div>
-            }
+            </div>
             <div className="flex mr-2 my-5"><HiPlus size={15} /><span>Add new payment method</span></div>
           </div>
         </form>
-        <h2>Billing history</h2>
-        <div>
-          <span className="flex my-5 w-fit bg-white py-1 px-3 shadow border-slate-200">
-            <img src={download} alt="download" width={30} height={30}/>
-            <span className="ml-2 ">Download all</span>
-          </span>
-        </div>
-      </div>
 
-      <div>
         <div>
+          <h2>Billing history</h2>
+          <div>
+            <span className="flex my-5 w-fit bg-white py-1 px-3 shadow border-slate-200">
+              <img src={download} alt="download" width={30} height={30}/>
+              <span className="ml-2 ">Download all</span>
+            </span>
+          </div>
+
+          <div className="w-screen p-5 overflow-x-auto">
+            <div className="flex justify-between items-center gap-10">
+              <input type="checkbox" name="history" />
+              <span>Invoice</span>
+              <span>Amount</span>
+              <span>Date</span>
+              <span>Status</span>
+              <span>Users on plan</span>
+              <span>Download</span>
+            </div>
+
+            {billings.map(billing =>
+              <BillingItem key={billing.id} data={billing}/>
+            )}
+          </div>
         </div>
       </div>
     </section>

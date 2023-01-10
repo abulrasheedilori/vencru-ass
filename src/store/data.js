@@ -9,7 +9,6 @@ import users from "../images/users.png";
 import support from "../images/support.png";
 import setting from "../images/setting.png";
 import paid from "../images/paid.png";
-import download from "../images/download.png";
 
 import avatar1 from "../images/avatar1.png";
 import avatar2 from "../images/avatar2.png";
@@ -63,8 +62,7 @@ export const billings = [
     amount: 10.00,
     date: "Dec 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars,
-    download: download
+    usersOnPlan: listOfAvatars
   },
   {
     id: 2,
@@ -72,8 +70,7 @@ export const billings = [
     amount: 10.00,
     date: "Nov 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars,
-    download: download
+    usersOnPlan: listOfAvatars
   },
   {
     id: 3,
@@ -81,8 +78,7 @@ export const billings = [
     amount: 10.00,
     date: "Oct 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars,
-    download: download
+    usersOnPlan: listOfAvatars
   },
   {
     id: 4,
@@ -90,8 +86,7 @@ export const billings = [
     amount: 10.00,
     date: "Sept 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars,
-    download: download
+    usersOnPlan: listOfAvatars
   },
   {
     id: 5,
@@ -99,8 +94,7 @@ export const billings = [
     amount: 10.00,
     date: "Aug 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars,
-    download: download
+    usersOnPlan: listOfAvatars
   },
   {
     id: 6,
@@ -108,8 +102,7 @@ export const billings = [
     amount: 10.00,
     date: "Jul 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars,
-    download: download
+    usersOnPlan: listOfAvatars
   },
   {
     id: 7,
@@ -117,7 +110,6 @@ export const billings = [
     amount: 10.00,
     date: "Jun 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars,
-    download: download
+    usersOnPlan: listOfAvatars
   }
 ]
