@@ -24,7 +24,7 @@ export const SettingScreen = () => {
         {links.map((link) => (
           <li
             key={link.id}
-            className=" py-3 px-5 text-1xl border-2  hover hover:bg-purple-700  hover:text-white shadow"
+            className="shrink-0 py-3 px-5 text-1xl border-2  hover hover:bg-purple-700  hover:text-white shadow"
           >
             {link.title}
           </li>
@@ -57,6 +57,15 @@ export const SettingScreen = () => {
             <div className="flex items-center p-2 my-2 mx-6 rounded-sm shadow-md">
               <HiMail size={20} />
               olivia@untitledui.com
+            </div>
+          </div>
+          <div>
+            <div>
+              <p>Card details</p>
+              <span>Select default payment method</span>
+            </div>
+            <div>
+              
             </div>
           </div>
         </form>
