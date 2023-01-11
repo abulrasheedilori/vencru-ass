@@ -1,7 +1,7 @@
 import visa from "../images/visa.png";
 import mastercard from "../images/mastercard.png";
-import home from "../images/home.png";
-import dashboard from "../images/dashboard.png";
+// import home from "../images/home.png";
+// import dashboard from "../images/dashboard.png";
 import projects from "../images/projects.png";
 import task from "../images/task.png";
 import flag from "../images/flag.png";
@@ -32,12 +32,14 @@ export const links = [
 export const cards = [
   {
     id: 1,
+    prepend: "Visa ending with",
     cardNo:"12345678801234",
     expDate: "06/2024",
     image: visa
   },
   {
     id: 2,
+    prepend: "Mastercard ending with",
     cardNo:"12345678801234",
     expDate: "06/2024",
     image: mastercard
@@ -45,8 +47,6 @@ export const cards = [
 ];
 
 export const navLinks = [
-  {id: 1, title: "Home", image: home},
-  {id: 2, title: "Dashboard", image: dashboard},
   {id: 3, title: "Projects", image: projects},
   {id: 4, title: "Tasks", image: task},
   {id: 5, title: "Reporting", image: flag},

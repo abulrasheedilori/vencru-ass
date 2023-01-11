@@ -1,19 +1,26 @@
 import { memo } from "react"
-import mark from "../images/mark.png"
+import marked from "../images/marked.png"
+import unmarked from "../images/unmarked.png"
 
-const CreditCard = (props) => {
+const CreditCard = ({card, mark, setMark}) => {
     return (
-        <div className="flex justify-around" >
-            <img src={props.card.image} alt="Visa logo" width={50} height={40}/>
-            <div>
-                <p>Visa ending in {props.card.cardNo.slice(-4)}</p>
-                <p>Expiry {props.card.expDate}</p>
+        <div className="my-5 px-2 py-5 flex justify-between rounded-md shadow hover hover:bg-purple-100 hover:border-2 hover:border-purple-500 hover:text-purple-700" >
+            <div className="pr-10 flex justify-start">
+                <img src={card.image} alt="Visa logo" className="w-10 h-6 mt-5 m-5 rounded border-2 shadow-sm"/>
                 <div>
-                    <span>Set as default</span>
-                    <span>Edit</span>
+                    <p className="my-2 font-bold">{card.prepend + " " + card.cardNo.slice(-4)}</p>
+                    <p>Expiry {card.expDate}</p>
+                    <div>
+                        <span className="mr-5">Set as default</span>
+                        <span className="font-bold hover:bg-purple-700 hover:text-white p-1 rounded">Edit</span>
+                    </div>
                 </div>
             </div> 
-            <img src={mark} width={50} height={50} alt="Marked" />
+                {
+                    <button className="w-5 h-5" onClick={()=> setMark(!mark)}>
+                        <img src={mark? (marked) : (unmarked)} className="w-5 h-5" alt="Marked" />
+                    </button>
+                }
         </div>
     )
 }
