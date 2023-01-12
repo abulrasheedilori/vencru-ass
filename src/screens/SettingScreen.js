@@ -90,7 +90,7 @@ export const SettingScreen = () => {
                   (card) => (<CreditCard key={card.id} card = {card} mark={mark} setMark={setMark}/>))
                 }
               </div>
-              <div className="flex hover:p-2 my-5 items-center hover hover:border-2">
+              <div className="w-fit flex hover:p-2 my-5 items-center hover hover:border-2">
                 <HiPlus size={20} className="mr-5"/>
                 <span className="text-slate-600">Add new payment method</span></div>
             </div>
@@ -105,21 +105,25 @@ export const SettingScreen = () => {
               </div>
             </div>
 
-            <div className="min-w-full p-5 overflow-x-auto">
-              <table className="table-auto">
+            <div className="overflow-x-auto">
+              <table className="w-full">
                 <thead>
-                  <tr className="flex-col flex-nowrap">
-                    <th><input type="checkbox" name="history" /></th>
+                  <tr className="w-full h-10 text-left">
+                    <th className="px-5"><input type="checkbox" name="history" /></th>
                     <th>Invoice</th>
                     <th>Amount</th>
-                    <th>Date</th>
-                    <th >Status</th>
-                    <th className="shrink-0">Users on plan</th>
-                    <th>Download</th>
+                    {/* <th>Date</th>
+                    <th>Status</th>
+                    <th>User on plan</th>
+                    <th>Download</th> */}
+                    <th className="hidden text-left md:visible">Date</th>
+                    <th className="md:visible hidden">Status</th>
+                    <th className="hidden md:visible">Users on plan</th>
+                    <th className="hidden md:visible">Download</th>
                   </tr>
                 </thead>
                 <tbody>
-                  {billings.map(billing =>
+                  {billings.map( billing =>
                     <BillingItem key={billing.id} data={billing}/>
                   )}
                 </tbody>
