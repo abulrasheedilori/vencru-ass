@@ -44,7 +44,7 @@ export const SettingScreen = () => {
           {links.map((link) => (
             <li
               key={link.id}
-              className="shrink-0 py-2 px-4 text-1xl  hover hover:bg-purple-700  hover:text-white shadow"
+              className="shrink-0 py-2 px-4 text-1xl   hover:bg-purple-700  hover:text-white shadow"
             >
               {link.title}
             </li>

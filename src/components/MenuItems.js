@@ -18,43 +18,48 @@ import avatar1 from '../images/avatar1.png';
 
 function MenuItems(props) {
   return (
-    <div className={`md:block sm:absolute top-0 right-0 bg-white text-slate-900 flex-1 justify-self-center pb-3 mt-8 md:block md:pb-0 md:mt-0 ${props.navBar ? "block" : "hidden"}`}>
+    <div className={`w-fit absolute top-18 right-0 bg-white rounded-lg text-slate-900 ${props.navBar ? "block" : "hidden"}`}>
         <div className="ml-5 my-1">
-            <div>
-                <AiOutlineSearch size={30} />
-                <input type="search" name='search' />
+            <div className="w-full h-fit flex items-center rounded-md outline outline-slate-300 outline-1 focus:outline-none focus:ring focus:border-purple-900">
+                <AiOutlineSearch size={30} color="gray" className="p-1"/>
+                <input className="w-full h-full outline-none" type="search" placeholder="Search" name='search' />
             </div>
-            <div>
-                <img src={home} width="20" height="20" alt="home" />
+
+            <div className="flex items-center p-1 mr-5 hover:bg-purple-900 hover:text-white font-bold shadow-sm rounded">
+                <img className='mr-2' src={home} width="20" height="20" alt="home" />
                 <span>Home</span>
             </div>
-            <div>
-                <div>
-                    <img src={dashboard} width="20" height="20" alt="dashboard" />
+
+            <div className="flex items-center p-1 hover:bg-purple-900 hover:text-white font-bold shadow-sm rounded">
+                <div className="flex items-center mr-5">
+                    <img className='mr-2' src={dashboard} width="20" height="20" alt="dashboard" />
                     <span>Dashboard</span>
                 </div>
-                <span>10</span>
+                <span className="ml-2 p-1 bg-white text-black font-bold shadow-sm rounded-full">10</span>
             </div>
+
             {
                 navLinks.map(navLink => <Item key={navLink.id} navLink={navLink}/>)
             }
         </div>
-        <div>
-            <p>New featues available!</p>
+
+        <div className="w-full m-2">
+            <p className="font-bold">New featues available!</p>
             <p>Check out the new dashboard view. Pages now load faster.</p>
-            <img src={user} width="100" height="40" alt="features" />
+            <img src={user} className="w-full h-30 p-4 bg-slate-100" alt="features" />
             <br />
             <div>
-                <span>Dismiss</span>
-                <span>What's new?</span></div>
+                <button onPress={()=> null} className="mx-2 hover:font-bold hover:text-green-600">Dismiss</button>
+                <button onPress={()=> null} className="text-purple-700 hover:font-bold hover:text-green-600">What's new?</button>
+            </div>
         </div>
-        <div className='flex justify-between items-around'>
-            <img src={avatar1} width="12" height="12" className="rounded-xl" alt="features" />
-            <div>
+        <div className='w-auto p-2 flex justify-between items-center overflow-x-auto'>
+            <img src={avatar1} className="w-10 h-10 mr-2 rounded-full" alt="features" />
+            <div className='mr-2'>
                 <p>Olivia Rhyle</p>
                 <p>olivia@untitledui.com</p>
             </div>
-            <img src={enter} width="12" height="12" alt="features" />
+            <img src={enter} className="w-5 h-4" alt="features" />
         </div>
     </div>
   )
