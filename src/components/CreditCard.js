@@ -1,10 +1,9 @@
 import { memo } from "react"
-import marked from "../images/marked.png"
 import unmarked from "../images/unmarked.png"
 
-const CreditCard = ({card, mark, setMark}) => {
+const CreditCard = ({card}) => {
     return (
-        <div className="my-5 px-2 py-5 flex justify-between rounded-md shadow hover hover:bg-purple-100 hover:border-2 hover:border-purple-500 hover:text-purple-700" >
+        <div className="my-5 px-2 py-5 flex justify-between rounded-md shadow hover hover:bg-purple-100 hover:border-2 hover:border-purple-500 hover:text-purple-700 hover:transition-all hover:duration-700 hover:ease-in" >
             <div className="pr-10 flex justify-start">
                 <img src={card.image} alt="Visa logo" className="w-10 h-6 mt-5 m-5 rounded border-2 shadow-sm"/>
                 <div>
@@ -17,8 +16,8 @@ const CreditCard = ({card, mark, setMark}) => {
                 </div>
             </div> 
                 {
-                    <button className="w-5 h-5" onClick={()=> setMark(!mark)}>
-                        <img src={mark? (marked) : (unmarked)} className="w-5 h-5" alt="Marked" />
+                    <button className="w-5 h-5" onClick={null}>
+                        <img src={unmarked} className="w-5 h-5" alt="Marked" />
                     </button>
                 }
         </div>

@@ -16,7 +16,7 @@ import avatar3 from "../images/avatar3.png";
 import avatar4 from "../images/avatar4.png";
 import avatar5 from "../images/avatar5.png";
 
-export const listOfAvatars = [avatar1, avatar2, avatar3, avatar4, avatar5];
+export const sum = () => {}
 export const links = [
   { id: 1, title: "My details" },
   { id: 2, title: "Profile" },
@@ -35,14 +35,15 @@ export const cards = [
     prepend: "Visa ending with",
     cardNo:"12345678801234",
     expDate: "06/2024",
-    image: visa
+    image: visa,
   },
   {
     id: 2,
     prepend: "Mastercard ending with",
     cardNo:"12345678801234",
     expDate: "06/2024",
-    image: mastercard
+    image: mastercard,
+
   }
 ];
 
@@ -62,7 +63,13 @@ export const billings = [
     amount: 10.00,
     date: "Dec 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars
+    usersOnPlan: [
+      {id: 0, image: avatar1},
+      {id: 6, image: avatar2},
+      {id: 12, image: avatar3},
+      {id: 18, image: avatar4},
+      {id: 24, image: avatar5}
+    ]
   },
   {
     id: 2,
@@ -70,7 +77,13 @@ export const billings = [
     amount: 10.00,
     date: "Nov 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars
+    usersOnPlan: [
+      {id: 0, image: avatar1},
+      {id: 6, image: avatar2},
+      {id: 12, image: avatar3},
+      {id: 18, image: avatar4},
+      {id: 24, image: avatar5}
+    ]
   },
   {
     id: 3,
@@ -78,7 +91,13 @@ export const billings = [
     amount: 10.00,
     date: "Oct 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars
+    usersOnPlan: [
+      {id: 0, image: avatar1},
+      {id: 6, image: avatar2},
+      {id: 12, image: avatar3},
+      {id: 18, image: avatar4},
+      {id: 24, image: avatar5}
+    ]
   },
   {
     id: 4,
@@ -86,7 +105,11 @@ export const billings = [
     amount: 10.00,
     date: "Sept 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars
+    usersOnPlan: [
+      {id: 0, image: avatar1},
+      {id: 6, image: avatar2},
+      {id: 12, image: avatar3}
+    ]
   },
   {
     id: 5,
@@ -94,7 +117,12 @@ export const billings = [
     amount: 10.00,
     date: "Aug 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars
+    usersOnPlan: [
+      {id: 0, image: avatar1},
+      {id: 6, image: avatar2},
+      {id: 12, image: avatar3},
+      {id: 18, image: avatar4}
+    ]
   },
   {
     id: 6,
@@ -102,7 +130,10 @@ export const billings = [
     amount: 10.00,
     date: "Jul 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars
+    usersOnPlan: [  
+      {id: 0, image: avatar1},
+      {id: 6, image: avatar2},
+      {id: 12, image: avatar3}]
   },
   {
     id: 7,
@@ -110,6 +141,11 @@ export const billings = [
     amount: 10.00,
     date: "Jun 1, 2022",
     status: paid,
-    usersOnPlan: listOfAvatars
+    usersOnPlan: [
+      {id: 0, image: avatar1},
+      {id: 6, image: avatar2},
+      {id: 12, image: avatar3},
+      {id: 18, image: avatar4}
+    ]
   }
 ]

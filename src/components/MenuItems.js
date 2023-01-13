@@ -16,21 +16,21 @@ import Item from './Item';
 import avatar1 from '../images/avatar1.png';
 
 
-function MenuItems(props) {
+function MenuItems({navBar}) {
   return (
-    <div className={`w-fit absolute top-18 right-0 bg-white rounded-lg text-slate-900 ${props.navBar ? "block" : "hidden"}`}>
+    <div className={`md:block md:static md:top-20 md:left:0 absolute w-fit pb-4 top-18 right-0 bg-white rounded-lg text-slate-900 ${navBar ? "block" : "hidden"}`}>
         <div className="ml-5 my-1">
-            <div className="w-full h-fit flex items-center rounded-md outline outline-slate-300 outline-1 focus:outline-none focus:ring focus:border-purple-900">
+            <div className="w-full mb-2 h-fit flex items-center rounded-md outline outline-slate-300 outline-1 focus:outline-none focus:ring focus:border-purple-900">
                 <AiOutlineSearch size={30} color="gray" className="p-1"/>
                 <input className="w-full h-full outline-none" type="search" placeholder="Search" name='search' />
             </div>
 
-            <div className="flex items-center p-1 mr-5 hover:bg-purple-900 hover:text-white font-bold shadow-sm rounded">
+            <div className="flex items-center p-1 mr-5 hover:bg-purple-900 hover:text-white font-bold shadow-sm rounded hover:transition-all hover:duration-700 hover:ease-in">
                 <img className='mr-2' src={home} width="20" height="20" alt="home" />
                 <span>Home</span>
             </div>
 
-            <div className="flex items-center p-1 hover:bg-purple-900 hover:text-white font-bold shadow-sm rounded">
+            <div className="flex items-center p-1 hover:bg-purple-900 hover:text-white font-bold shadow-sm rounded hover:transition-all hover:duration-700 hover:ease-in">
                 <div className="flex items-center mr-5">
                     <img className='mr-2' src={dashboard} width="20" height="20" alt="dashboard" />
                     <span>Dashboard</span>
@@ -43,7 +43,7 @@ function MenuItems(props) {
             }
         </div>
 
-        <div className="w-full m-2">
+        <div className="hidden md:block w-full m-2">
             <p className="font-bold">New featues available!</p>
             <p>Check out the new dashboard view. Pages now load faster.</p>
             <img src={user} className="w-full h-30 p-4 bg-slate-100" alt="features" />
@@ -53,7 +53,7 @@ function MenuItems(props) {
                 <button onPress={()=> null} className="text-purple-700 hover:font-bold hover:text-green-600">What's new?</button>
             </div>
         </div>
-        <div className='w-auto p-2 flex justify-between items-center overflow-x-auto'>
+        <div className='hidden w-auto p-2 md:flex justify-between items-center overflow-x-auto'>
             <img src={avatar1} className="w-10 h-10 mr-2 rounded-full" alt="features" />
             <div className='mr-2'>
                 <p>Olivia Rhyle</p>
