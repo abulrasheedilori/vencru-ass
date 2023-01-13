@@ -16,7 +16,7 @@ import avatar3 from "../images/avatar3.png";
 import avatar4 from "../images/avatar4.png";
 import avatar5 from "../images/avatar5.png";
 
-export const sum = () => {}
+
 export const links = [
   { id: 1, title: "My details" },
   { id: 2, title: "Profile" },

@@ -44,11 +44,11 @@ export const SettingScreen = () => {
             <p className="text-slate-600">Manage your team and preferences here</p>
           </div>
           {/* Links My Details */}
-          <ul className="w-full flex px-5 divide-x-2 divide-y-2 items-center justify-start rounded-md overflow-auto scroll-smooth">
+          <ul className="w-fit mx-4 border-2 border-slate-300 flex px-5 items-center justify-start rounded-lg scroll-smooth transition-all duration-300 ease-in overflow-auto">
             {links.map((link) => (
               <li
                 key={link.id}
-                className="shrink-0 py-2 px-4 text-1xl hover:bg-purple-700 hover:text-white transition-all duration-700 ease-in"
+                className="shrink-0 border-r-2 py-2 px-4 text-[14px] hover:bg-purple-700 hover:text-white transition-all duration-300 ease-in"
               >
                 {link.title}
               </li>
