@@ -113,16 +113,16 @@ export const SettingScreen = () => {
               </div>
 
               <div className="overflow-x-auto">
-                <table className="table-auto border-2 border-blue-600">
+                <table className="table-auto shadow-md border-2 round-sm">
                   <thead>
-                    <tr className="w-full h-10 border border-red-600">
-                      <th className="px-5"><input type="checkbox" className="bg-purple-700" name="history" /></th>
-                      <th>Invoice</th>
-                      <th>Amount</th>
-                      <th className="hidden text-left md:block border border-black">Date</th>
-                      <th className="md:block text-left hidden border border-black">Status</th>
-                      <th className="hidden text-left md:block border border-black">Users on plan</th>
-                      <th className="hidden text-left md:block border border-black">Download</th>
+                    <tr className="w-full border-2">
+                      <th className="p-2"><input type="checkbox" className="bg-purple-700" name="history" /></th>
+                      <th className="p-2">Invoice</th>
+                      <th className="p-2">Amount</th>
+                      <th className="p-2 hidden md:table-cell">Date</th>
+                      <th className="p-2 hidden md:table-cell">Status</th>
+                      <th className="p-2 whitespace-nowrap hidden md:table-cell">Users on plan</th>
+                      <th className="p-2 hidden md:table-cell ">Download</th>
                     </tr>
                   </thead>
                   <tbody>
