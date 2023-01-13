@@ -18,7 +18,7 @@ export const SettingScreen = () => {
         <nav className="md:w-1/4 md:block md:h-full w-full h-30 flex justify-between bg-white shadow-lg p-5 items-center">
           <div className="flex items-center">
             <img src={logo} alt="Logo" className="w-12 h-12 mr-5" />
-            <h1 className="text-slate-900 font-bold text-2xl">Untitled UI</h1>
+            <h1 className="text-slate-900 font-bold text-1xl">Untitled UI</h1>
           </div>
           <div className=" relative">
             <button 
@@ -40,7 +40,7 @@ export const SettingScreen = () => {
         <div className="md:w-3/4 plx-5">
           {/* Settings */}
           <div className="m-5">
-            <h1 className="text-slate-900 font-bold text-2xl">Settings</h1>
+            <h1 className="text-slate-900 font-bold text-xl">Settings</h1>
             <p className="text-slate-600">Manage your team and preferences here</p>
           </div>
           {/* Links My Details */}
@@ -104,7 +104,7 @@ export const SettingScreen = () => {
             <div>
           {/* Billing History */}
           <div className="m-5">
-              <h2 className="text-slate-900 text-2xl font-bold">Billing history</h2>
+              <h2 className="text-slate-900 text-xl font-bold">Billing history</h2>
               <div>
                 <div className="flex my-5 w-fit bg-white py-1 px-3 shadow border-slate-200">
                   <img src={download} alt="download" width={30} height={30}/>
