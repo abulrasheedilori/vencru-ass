@@ -113,13 +113,13 @@ export const SettingScreen = () => {
               </div>
 
               <div className="overflow-x-auto">
-                <table className="table-auto shadow-md border-2 round-sm">
+                <table className="w-full m-auto shadow-md border-2 round-sm">
                   <thead>
-                    <tr className="w-full border-2">
+                    <tr className="w-full border-2 text-left">
                       <th className="p-2"><input type="checkbox" className="bg-purple-700" name="history" /></th>
-                      <th className="p-2">Invoice</th>
-                      <th className="p-2">Amount</th>
-                      <th className="p-2 hidden md:table-cell">Date</th>
+                      <th className="p-2 whitespace-nowrap">Invoice</th>
+                      <th className="p-2 whitespace-nowrap">Amount</th>
+                      <th className="p-2 whitespace-nowrap hidden md:table-cell">Date</th>
                       <th className="p-2 hidden md:table-cell">Status</th>
                       <th className="p-2 whitespace-nowrap hidden md:table-cell">Users on plan</th>
                       <th className="p-2 hidden md:table-cell ">Download</th>

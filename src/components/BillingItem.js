@@ -10,11 +10,11 @@ import avatar5 from "../images/avatar5.png";
 
 const BillingItem = ({ data }) => {
     return (
-        <tr className="w-full text-slate-600 border-2 bg-white hover:text-purple-50 hover:bg-purple-600 hover:transition-all hover:duration-300 hover:ease-in">
+        <tr className="w-full text-left text-slate-600 border-2 bg-white hover:text-purple-50 hover:bg-purple-600 hover:transition-all hover:duration-300 hover:ease-in">
             <td className="p-2"><input type="checkbox" name="history" /></td>
             <td className="p-2 text-[14px] whitespace-nowrap md:text-base">{data.invoice}</td>
             <td className="p-2">USD{data.amount}.00</td>
-            <td className="hidden md:table-cell ">{data.date}</td>
+            <td className="whitespace-nowrap hidden md:table-cell ">{data.date}</td>
             <td className="p-2 hidden md:table-cell"><img src={data.status} alt="download" className=" w-50 h-7 shadow rounded-md" /></td>
             <td className="p-2 hidden md:table-cell">
                 <div className="relative -top-2">
