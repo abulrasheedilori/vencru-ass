@@ -113,7 +113,7 @@ export const SettingScreen = () => {
               </div>
 
               <div className="overflow-x-auto">
-                <table className="w-full m-auto shadow-md border-2 round-sm">
+                <table className="w-full my-5 m-auto shadow-md border-2 round-sm">
                   <thead>
                     <tr className="w-full border-2 text-left">
                       <th className="p-2"><input type="checkbox" className="bg-purple-700" name="history" /></th>
