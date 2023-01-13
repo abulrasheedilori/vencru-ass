@@ -76,7 +76,7 @@ export const SettingScreen = () => {
               </div>
               <div>
                 <div>
-                  <input type="radio" name="email" /> <span className="text-slate-600 font-bold">Send to my email</span>
+                  <input type="radio" name="email" /> <span className="text-slate-600 font-bold">Send to an alternative email</span>
                 </div>
                 <div className="md:w-fit flex items-center bg-white border-grey border-2 text-slate-600 px-4 py-2 mx-4 rounded-md shadow-md">
                   <HiMail size={30} className="mr-2"/>
