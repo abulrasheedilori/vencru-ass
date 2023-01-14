@@ -44,7 +44,7 @@ export const SettingScreen = () => {
             <p className="text-slate-600">Manage your team and preferences here</p>
           </div>
           {/* Links My Details */}
-          <ul className="w-auto mx-2 border-2 border-slate-300 flex px-5 items-center justify-start rounded-lg scroll-smooth transition-all duration-300 ease-in overflow-auto">
+          <ul className="md:w-fit mx-2 border-2 border-slate-300 flex px-5 items-center justify-start rounded-lg scroll-smooth transition-all duration-300 ease-in overflow-auto">
             {links.map((link) => (
               <li
                 key={link.id}

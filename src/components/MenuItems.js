@@ -21,7 +21,7 @@ function MenuItems({navBar}) {
     <div className={`md:block md:static md:top-20 md:left:0 absolute w-fit pb-4 top-18 right-0 bg-white rounded-lg text-slate-900 ${navBar ? "block" : "hidden"}`}>
         <div className="ml-5 my-1">
             <div className="w-full mb-2 h-fit flex items-center rounded-md outline outline-slate-300 outline-1 focus:outline-none focus:ring focus:border-purple-900">
-                <AiOutlineSearch size={30} color="gray" className="p-1"/>
+                <AiOutlineSearch size={25} className="mx-2 bg-gray"/>
                 <input className="w-full h-full outline-none" type="search" placeholder="Search" name='search' />
             </div>
 
